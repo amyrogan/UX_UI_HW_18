@@ -56,14 +56,14 @@ h1 {
     font-size: 4.5vw;
     margin: 40px 40px;
     margin-top: 80px;
-    color: #0076BE;
+    color: #005E98;
 }
 
 h2 {
     font-size: 2.25vw;
     font-weight: 400;
     margin: 20px 40px;
-    color: #0076BE;
+    color: #005E98;
 }
 
 h3 {
@@ -88,7 +88,7 @@ h5 {
 /* HERO */
 
 #heroGrid {
-    margin: -30px 0px;
+    margin: -40px 0px;
     justify-content: space-between;
     background-color: #E1F4FA;
     display: grid;
@@ -185,6 +185,10 @@ h5 {
     padding: 0px;
 }
 
+.case {
+    margin: 15px;
+}
+
 
 
 /* SECTION 2 - QUOTE */
@@ -218,14 +222,15 @@ h5 {
 
 
 
-/* SECTION 2 - LOGOS */
+/* SECTION 3 - LOGOS */
 
 #logoFolio {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding-top: 3rem;
-    background-image: url("../images/fter_bkgd.png");
+    background-image: url("../images/sec3_bkgd.png");
     width: auto;
-    height: 550px;
+    height: auto;
     align-items: center;
     margin-top: -30px;
     border-bottom: solid 3px #0076BE;
@@ -240,10 +245,18 @@ h5 {
 
 #logoCards {
     display: flex;
+    max-width: 980px;
+    max-height: 250px;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 70px;
+    justify-content: flex-start;
+    margin: 10px 20px 50px 20px;
     padding: 10px;
+    overflow-x: auto;
+}
+
+.logo {
+    margin: 10px;
+    min-width: 225px;
 }
 
 /* FOOTER */
@@ -366,25 +379,32 @@ h5 {
 
     #heroGrid {
         margin: 0px;
-        margin-top: 48px;
-        align-content: flex-end;
-        justify-content: flex-end;
+        margin-top: 38px;
         background-color: #E1F4FA;
         display: grid;
-        grid-template-rows: 45% 55%;
+        grid-template-rows: 51% 49%;
         grid-template-columns: 100%;
         grid-template-areas: "headline" "headshot"
         ;
     }
 
     #headline {
-        
+        grid-area: headline;
 
     }
 
     #headshot {
+        grid-area: headshot;
+        display: flex;
+        align-items: end;
+        margin-top: 10px;
+        margin-bottom: -5%;
 
+    }
 
+    #hamburger button {
+        border: none;
+        background: none;
     }
 
     
@@ -392,14 +412,14 @@ h5 {
         font-size: 8vw;
         margin: 30px 40px;
         margin-top: 50px;
-        color: #0076BE;
+        color: #005E98;
     }
     
     h2 {
         font-size: 5vw;
         font-weight: 400;
         margin: 20px 40px;
-        color: #0076BE;
+        color: #005E98;
     }
 
     h3 {
@@ -523,6 +543,33 @@ h5 {
     text-align: center;
     margin: 0px;
 }
+
+
+
+
+
+}
+
+
+/* RESPONSIVE Medium Screens */
+
+@media only screen and (max-width: 1000px) {
+
+    #logoCards {
+        display: flex;
+        max-width: 80%;
+        max-height: 270px;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 10px 20px 50px 20px;
+        padding: 10px;
+        overflow-x: auto;
+    }
+    
+    .logo {
+        margin: 20px;
+        min-width: 225px;
+    }
 
 
 
