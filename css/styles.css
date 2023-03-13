@@ -1,0 +1,531 @@
+body {
+    font-family: 'Urbanist', sans-serif;
+    background-color: white;
+    margin: 0px;
+}
+
+
+/* HEADER */
+#navBar {
+
+    display: flex;
+    flex-directon: row;
+    margin: 0 40px;
+    padding-top: 20px;
+    height: 120px;
+}
+
+.left {
+    display: flex;
+    width: 35%;
+    margin-top: 26px;
+}
+
+.left h3 {
+    width: 10%;
+    font-weight: 600;
+}
+
+.center {
+    width: 60%;
+    padding:25px;
+    text-align: center;
+}
+
+#navigation {
+    display: flex;
+    width: 35%;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+#navigation p {
+    margin: 10px 0px 10px 20px;
+    font-size: 20px;
+}
+
+#hamburger {
+    display: none;
+}
+
+
+/* TYPOGRAPHY */
+
+h1 {
+    font-size: 4.5vw;
+    margin: 40px 40px;
+    margin-top: 80px;
+    color: #0076BE;
+}
+
+h2 {
+    font-size: 2.25vw;
+    font-weight: 400;
+    margin: 20px 40px;
+    color: #0076BE;
+}
+
+h3 {
+    font-size: 2.25vw;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 2px;
+}
+
+
+
+/* HERO */
+
+#heroGrid {
+    margin: -30px 0px;
+    justify-content: space-between;
+    background-color: #E1F4FA;
+    display: grid;
+    align-content: flex-end;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "headline headshot"
+    ;
+}
+
+#headline {
+    grid-area: headline;
+}
+
+#headshot {
+    grid-area: headshot;
+    justify-self: end;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+
+
+
+
+.more {
+    font-size: 20px;
+    background-color: #3985AE;
+    padding: 30px 30px 30px 10%;
+    margin-top: -50px;
+    color: white;
+}
+
+/* SECTION 1 - CASE STUDIES */
+
+#caseGrid {
+    margin: -30px 0px;
+    background-repeat: none;
+    background-image: url("../images/sec1_bkgd_cs.png");
+    display: grid;
+    min-height: 650px;
+    height: 7vh;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "caseHead"
+    "cases";
+
+    ;
+}
+
+#caseHeader {
+    background-image: url("../images/sec1_cs.png");
+    size: 400px;
+}
+
+#casesVert {
+    display: none;
+}
+
+#caseStudies {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/sec1_bkgd_cs.png");
+    width: auto;
+    padding-top: 50px;
+    height: 30%;
+    align-items: space-between;
+   
+}
+
+#caseHead {
+    grid-area: caseHead;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.responsiveCS {
+    width: 120%;
+    max-width: 350px;
+    height: auto;
+}
+
+#cases {
+    grid-area: cases;
+    size-adjust: ;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    margin: 2rem 4rem 5rem 4rem ;
+    padding: 0px;
+}
+
+
+
+/* SECTION 2 - QUOTE */
+
+.amyFeature {
+    background-color: #3985AE;
+    display: flex;
+    margin: 0px;
+    padding: -40px;
+    padding-left: 30px;
+    
+}
+
+.amyStanding {
+    margin-top: -25px
+    
+
+}
+
+.secTwo {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 60px 30px;
+    justify-content: center;
+    color: white;
+}
+
+.secTwo h3 {
+    margin: 0px;
+}
+
+
+
+/* SECTION 2 - LOGOS */
+
+#logoFolio {
+    display: block;
+    padding-top: 3rem;
+    background-image: url("../images/fter_bkgd.png");
+    width: auto;
+    height: 550px;
+    align-items: center;
+    margin-top: -30px;
+    border-bottom: solid 3px #0076BE;
+   
+}
+
+#logoHead {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+#logoCards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 70px;
+    padding: 10px;
+}
+
+/* FOOTER */
+
+
+
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+
+#footerNav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 300px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+
+}
+
+.footerLogo {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    padding: 40px;
+
+}
+
+
+#footName {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: start;
+    margin: 0px 0px 0px 10px;
+    margin-top: 0px;
+}
+
+.icons {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 180px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* TYPE */
+
+#footerNav p {
+    margin: 30px 20px 15px 0px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* RESPONSIVE ELEMENTS */
+
+@media only screen and (max-width: 675px) {
+
+    #navigation {
+        display: none;
+    }    
+    #navBar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "none center center hamburger"
+        "left left left left";
+        margin: 30px 0px;
+        padding: 10px;
+        height: 60px;
+        align-items: center;
+        
+    }
+
+    .center {
+        grid-area: center;
+        width: 100%;
+        padding: 5px;
+        order: -1;
+        
+    }
+
+    .left {
+        grid-area: left;
+        display: flex;
+        margin: -5px;
+        padding: 0px;
+        justify-content: center;
+        width: auto;
+    }
+
+    #hamburger {
+        grid-area: hamburger;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: fit-content;
+        margin-right: 15px;
+        padding: -30;
+        order: -0;
+    }
+
+    .none {
+        grid-area: none;
+    }
+
+    #heroGrid {
+        margin: 0px;
+        margin-top: 48px;
+        align-content: flex-end;
+        justify-content: flex-end;
+        background-color: #E1F4FA;
+        display: grid;
+        grid-template-rows: 45% 55%;
+        grid-template-columns: 100%;
+        grid-template-areas: "headline" "headshot"
+        ;
+    }
+
+    #headline {
+        
+
+    }
+
+    #headshot {
+
+
+    }
+
+    
+    h1 {
+        font-size: 8vw;
+        margin: 30px 40px;
+        margin-top: 50px;
+        color: #0076BE;
+    }
+    
+    h2 {
+        font-size: 5vw;
+        font-weight: 400;
+        margin: 20px 40px;
+        color: #0076BE;
+    }
+
+    h3 {
+        font-size: 5vw;
+        font-weight: 400;
+    }
+    
+
+
+    #caseStudies {
+        display: flex;
+        flex-direction: column;
+        background-image: url("../images/sec1_bkgd_cs.png");
+        width: auto;
+        padding: 3rem 0rem 3rem .5rem;
+        height: auto;
+        align-items: space-evenly;
+       
+    }
+
+    .responsiveCS {
+        width: 80vw;
+        height: auto;
+    }
+
+    .responsiveLd {
+        width: 70vw;
+        max-width:300px;
+        height: auto;
+    }
+
+    
+    #casesVert {
+        display: flex;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+        margin: 30px 10px 20px 10px;
+        padding: 0px;
+        
+    }
+
+    #cases {
+        display: none;
+    }
+
+    .amyFeature {
+        background-color: #3985AE;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        flex-wrap: nowrap;
+    }
+
+
+.more {
+    font-size: 20px;
+    background-color: #3985AE;
+    padding: 30px 30px 30px 10%;
+    margin-top: -10px;
+    color: white;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+    background-color: white;
+}
+
+
+#footerNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    margin: 20px;
+    padding: 0px;
+    order: -1
+
+}
+
+.footerLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 40px;
+
+}
+
+#footerNav p {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+.icons {
+    width: 120px;
+    height: 40%;
+    margin: 5px;
+    padding: 0px;
+}
+
+#footName {
+    margin: 0px 0px 0px 0px;
+    align-items: center;
+}
+
+h5 {
+    text-align: center;
+    margin: 0px;
+}
+
+
+
+
+
+}
